@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --white: #ffffff;
+    --red: #C8191C;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Alegreya';
+    color: var(--white);
+}
+ul {
+    list-style-type: none;
+}
+li {
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: var(--white);
+}
+a:hover {
+    color: var(--red);
+}
+p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+}
+img {
+    display: inline-block;
+    object-fit: cover;
+    object-position: center;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+h1 {
+    font-size: 13rem;
+    line-height: 16rem;
+    margin-bottom: 5.5rem;
+}
+h2 {
+    font-size: 13rem;
+    line-height: 19rem;
+}
+h3 {
+    font-size: 8.4rem;
+    line-height: 11.4rem;
+}
+h4 {
+    font-size: 5.4rem;
+    line-height: 7.3rem;
+}
+h6 {
+    color: var(--red);
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+}
+.pt_200 {
+    padding-top: 20rem;
+}
+.pb_200 {
+    padding-bottom: 20rem;
+}
+.red_text {
+    color: var(--red);
+}
+.red_btn {
+    background-color: var(--red);
+    color: var(--white);
+    padding: 1.5rem 1rem;
+    width: 30rem;
+    height: 6.3rem;
+    line-height: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.4rem;
+    cursor: pointer;
+    border: 2px solid var(--red);
+    transition: all 0.3s;
+}
+.red_btn:hover {
+    background-color: transparent;
+    color: var(--red);
+}
+/* ========== Header ========== */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    padding: 4rem 0;
+}
+.main_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main_header nav a {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    margin-left: 5rem;
+}
+
+/* ========== Hero section CSS ========== */
+.hero_section {
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+    position: relative;
+    text-align: center;
+    padding: 37rem 0 32rem;
+}
+.hero_section::before {
+    content: '';
+    background-image: url('../images/hero-bg.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: absolute;
+    inset: 0;
+    opacity: 0.1;
+}
+.hero_section .container {
+    z-index: 1;
+    position: relative;
+}
+.hero_section h1 + p {
+    max-width: 900px;
+    margin: 0 auto 5.5rem;
+}
+
+/* ========== Discover Section ========== */
+.discover_section {
+    background: linear-gradient(0, #000000 16.49%, #C8191C 274.79%);
+}
+.discover_section .img_box {
+    margin-bottom: 2rem;   
+}
+.discover_section .about_part .img_box {
+    padding-right: 9rem;
+    border-right: 0.2px solid var(--white);
+    margin-bottom: 10rem;
+    height: 50rem;
+}
+.discover_section .about_part .img_box + p {
+    max-width: 54rem;
+}
+.discover_section .about_part .content {
+    padding-left: 8rem;
+}
+.discover_section .about_part .content h3 {
+    margin: 1.8rem 0 10rem;
+}
+
+/* ========== Super Section CSS =========== */
+.super_section {
+    background: linear-gradient(180deg, #000000 37.37%, #C8191C 231.27%);
+}
+.super_section p {
+    margin-top: 11.5rem;
+    max-width: 48.5rem;
+}
+.super_section .team_galary {
+    margin-left: 8rem;
+}
+.super_section .right_head {
+    margin-top: 10rem;
+}
+
+/* ============ Service Section CSS ============ */
+
+.service_section {
+    background: linear-gradient(0deg, #000000 16.49%, #C8191C 274.79%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1650px) {
+    .container {
+        max-width: 150rem;
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .container {
+        max-width: 161rem;
+        padding: 0 2rem;
+    }
+}
