@@ -1,0 +1,38 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.img_box {
+    border-radius: 10px;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bali .img_box {
+    height: 672px;
+    background-image: url(../images/bali.jpg);
+}
+.dubai .img_box {
+    height: 328px;
+    background-image: url(../images/dubai.jpg);
+}
+.paris .img_box {
+    height: 328px;
+    background-image: url(../images/paris.jpg);
+}
+.italy .img_box {
+    height: 328px;
+    background-image: url(../images/italy.jpg);
+}
+@media screen and (max-width: 991.98px) {
+    .bali .img_box,
+    .dubai .img_box,
+    .paris .img_box,
+    .italy .img_box {
+        height: 280px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}
