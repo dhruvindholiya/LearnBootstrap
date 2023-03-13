@@ -31,6 +31,7 @@ p {
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 2.4rem;
+    margin-bottom: 0;
 }
 img {
     display: inline-block;
@@ -40,6 +41,7 @@ img {
 h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     font-weight: 700;
+    margin-bottom: 0;
 }
 h1 {
     font-size: 13rem;
@@ -58,6 +60,10 @@ h4 {
     font-size: 5.4rem;
     line-height: 7.3rem;
 }
+h5 {
+    font-size: 4.4rem;
+    line-height: 6rem;
+}
 h6 {
     color: var(--red);
     font-size: 2.4rem;
@@ -68,6 +74,9 @@ h6 {
 }
 .pb_200 {
     padding-bottom: 20rem;
+}
+.mb_100 {
+    margin-bottom: 10rem;
 }
 .red_text {
     color: var(--red);
@@ -177,25 +186,66 @@ header {
 .service_section {
     background: linear-gradient(0deg, #000000 16.49%, #C8191C 274.79%);
 }
+.service_section .service_block {
+    max-width: 68rem;
+}
+.service_section .service_part {
+    gap: 15rem;
+}
+.service_section .service_block .inner {
+    border: 2px solid var(--white);
+    padding:  5rem;
+}
+.service_section .service_block img {
+    height: 32.4rem;
+    width: 100%;
+}
+.service_section h5 {
+    margin: 5rem 0 2rem;
+}
 
+/* ============= Why section ============= */
 
+.why_section {
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+}
+.why_section h4 {
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    margin:  3rem 0;
+}
 
+/* ============== Horoscope Section ============= */
+.horoscope_section {
+    background: linear-gradient(0deg, #000000 16.49%, #C8191C 274.79%);
 
+}
+.horoscope_section img {
+    margin-right: 6rem;
+}
+.horoscope_section .content {
+    max-width: 18rem;
+}
+.horoscope_section .content h4 {
+    margin-bottom: 1rem;
+}
+.horoscope_section .row:not(:last-child) > div:not(:last-child) {
+    margin-right: 8rem;
+}
+.horoscope_section h2 {
+    font-size: 10rem;
+    line-height: 13.6rem;
+}
 
+/* =========== Appointment Section  =========== */
 
+.appointment_section {
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
 
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.appointment_section .title_part {
+    padding-right: 200px;
+}
 
 @media screen and (min-width: 1650px) {
     .container {
