@@ -75,8 +75,20 @@ h6 {
 .pb_200 {
     padding-bottom: 20rem;
 }
+.pt_100 {
+    padding-top: 10rem;
+}
+.pb_100 {
+    padding-bottom: 10rem;
+}
+.mt_100 {
+    margin-top: 10rem;
+}
 .mb_100 {
     margin-bottom: 10rem;
+}
+.mb_80 {
+    margin-bottom: 8rem;
 }
 .red_text {
     color: var(--red);
@@ -84,7 +96,7 @@ h6 {
 .red_btn {
     background-color: var(--red);
     color: var(--white);
-    padding: 1.5rem 1rem;
+    padding: 1.5rem;
     width: 30rem;
     height: 6.3rem;
     line-height: 100%;
@@ -98,6 +110,19 @@ h6 {
 .red_btn:hover {
     background-color: transparent;
     color: var(--red);
+}
+.red_bg {
+    background-color: var(--red);
+    border-color: var(--red) !important;
+}
+.red_bg .red_btn {
+    background-color: var(--white);
+    color: var(--red);
+    border-color: var(--white);
+}
+.red_bg .red_btn:hover {
+    background-color: transparent;
+    color: var(--white);
 }
 /* ========== Header ========== */
 header {
@@ -177,10 +202,6 @@ header {
 .super_sec .team_galary {
     margin-left: 8rem;
 }
-.super_sec .right_head {
-    margin-top: 10rem;
-}
-
 /* ============ Service Section CSS ============ */
 
 .service_sec {
@@ -245,11 +266,11 @@ header {
 .gap_80 {
     gap: 8rem;
 }
-form > div.row {
+.appointment_sec form > div.row {
     margin-left: calc(var(--bs-gutter-x) * -3);
     margin-right: calc(var(--bs-gutter-x) * -3);
 }
-form > div.row > div {
+.appointment_sec form > div.row > div {
     padding-left: calc(var(--bs-gutter-x) * 3);
     padding-right: calc(var(--bs-gutter-x) * 3);
 }
@@ -276,7 +297,7 @@ form select.form-select {
     height: 10rem;
 }
 form select.form-select option {
-    color: #000000;
+    background-color: #000;
     text-transform: lowercase;
 }
 form input.form-control:focus,
@@ -293,11 +314,86 @@ form input::placeholder {
 }
 
 /* ======== Get Started Section ============ */
-.get_started_sec {
+.get_started_sec::after {
+    content: '';
     background: linear-gradient(180deg, #514242 -74.63%, #2E0A0A 38.7%, #000000 151.34%);
-    background-image: url(../images/hero-bg.png);
-    background-blend-mode: multiply;
+    position: absolute;
+    inset: 0;
+    z-index: -2;
 }
+.get_started_sec .container::before {
+    content: '';
+    background-image: url(../images/wheel-2.svg);
+    opacity: 0.1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+.get_started_sec p {
+    max-width: 90rem;
+    margin: 2rem auto 5rem;
+}
+
+/* =========== Membership Section CSS =========== */
+.membership_sec {
+    background: linear-gradient(0deg, #000000 16.49%, #C8191C 274.79%);
+}
+.membership_sec .card_block {
+    max-width: 46.5rem;
+}
+.membership_sec .card_inner {
+    border: 0.2rem solid var(--white);
+    padding: 6rem 7.3rem;
+}
+.membership_sec h6 {
+    color: var(--white);
+}
+.membership_sec h3 {
+    margin: 3rem 0;
+}
+.membership_sec h3 span {
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+}
+.membership_sec .card_block li {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+.membership_sec .card_block li::before {
+    content: '';
+    background-image: url(../images/check-mark.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    margin-right: 2rem;
+}
+.membership_sec .card_block a {
+    margin-top: 6rem;
+}
+
+/* ========== Client Section ========== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 1650px) {
     .container {
