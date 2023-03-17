@@ -6,10 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+
     <!-- Alegreya font -->
     <link rel="stylesheet" href="../assets/css/font.css">
+
+    <!-- Swiper slider cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap CSS -->
+
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
     <!-- Local CSS -->
     <link rel="stylesheet" href="../assets/css/boodoo.css">
 </head>
@@ -112,16 +123,16 @@
                     <div class="col-7">
                         <div class="row team_galary">
                             <div class="gx-0 col-3">
-                                <img class="img-fluid" src="../assets/images/super-team.jpg" alt="super-team">
+                                <img class="img-fluid" src="../assets/images/super-team-1.jpg" alt="Our team member">
                             </div>
                             <div class="gx-0 col-3">
-                                <img class="img-fluid" src="../assets/images/super-team.jpg" alt="super-team">
+                                <img class="img-fluid" src="../assets/images/super-team-2.jpg" alt="Our team member">
                             </div>
                             <div class="gx-0 col-3">
-                                <img class="img-fluid" src="../assets/images/super-team.jpg" alt="super-team">
+                                <img class="img-fluid" src="../assets/images/super-team-3.jpg" alt="Our team member">
                             </div>
                             <div class="gx-0 col-3">
-                                <img class="img-fluid" src="../assets/images/super-team.jpg" alt="super-team">
+                                <img class="img-fluid" src="../assets/images/super-team-4.jpg" alt="Our team member">
                             </div>
                         </div>
                         <h2 class="mt_100">BOODOO TEAM</h2>
@@ -137,7 +148,7 @@
                     <h6>SERVICES</h6>
                     <h3>Get Latest Daily Zodiac Forecast and Analysis for Success</h3>
                 </div>
-                <div class="row g-0 justify-content-between service_part">
+                <div class="row g-0 justify-content-center service_part">
                     <div class="service_block">
                         <div class="inner">
                             <img class="img-fluid" src="../assets/images/Astrological-forecast.jpg"
@@ -344,15 +355,15 @@
         <section class="membership_sec pt_200 pb_200">
             <div class="container">
                 <div class="text-center mb_80">
-                    <h6>Membership</h6>
+                    <h6 class="text-white">Membership</h6>
                     <h3>Membership Price</h3>
                 </div>
                 <div class="row gap_80 justify-content-between">
                     <div class="col card_block">
                         <div class="card_inner">
-                            <h6 class="text-center">STARTER PRICE</h6>
+                            <h6 class="text-center text-white">STARTER PRICE</h6>
                             <h3>$44/<span>month</span></h3>
-                            <ul class="p-0">
+                            <ul>
                                 <li>
                                     <p>Lorem ipsum dolor sit amet con</p>
                                 </li>
@@ -371,9 +382,9 @@
                     </div>
                     <div class="col card_block">
                         <div class="card_inner red_bg">
-                            <h6 class="text-center">BEST VALUE</h6>
+                            <h6 class="text-center text-white">BEST VALUE</h6>
                             <h3>$72/<span>month</span></h3>
-                            <ul class="p-0">
+                            <ul>
                                 <li>
                                     <p>Lorem ipsum dolor sit amet con</p>
                                 </li>
@@ -392,9 +403,9 @@
                     </div>
                     <div class="col card_block">
                         <div class="card_inner">
-                            <h6 class="text-center">PREMIUM PRICE</h6>
+                            <h6 class="text-center text-white">PREMIUM PRICE</h6>
                             <h3>$122/<span>month</span></h3>
-                            <ul class="p-0">
+                            <ul>
                                 <li>
                                     <p>Lorem ipsum dolor sit amet con</p>
                                 </li>
@@ -418,13 +429,242 @@
         <!-- Client Section -->
         <section class="client_sec">
             <div class="container">
-                
+                <div class="text-center">
+                    <h2>OUR HAPPY CLIENT SAY ABOUT BOODOO</h2>
+                    <div class="bottom_arrow mx-auto mt_100 mb_100 p"></div>
+                </div>
+                <div class="swiper client_slider position-relative">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img src="../assets/images/client-1.jpg" alt="Client">
+                                <div class="pt_100">
+                                    <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut
+                                        vehicula eu consectetur elit at. Nulla erat nunc nisl dui sed cras semper vitae.
+                                        Tempor odio ullamcorper non sed dignissim eu egestas fusce arcu.</p>
+                                    <h6>Antonio H - Client</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img src="../assets/images/client-2.jpg" alt="Client">
+                                <div class="pt_100">
+                                    <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut
+                                        vehicula eu consectetur elit at. Nulla erat nunc nisl dui sed cras semper vitae.
+                                        Tempor odio ullamcorper non sed dignissim eu egestas fusce arcu.</p>
+                                    <h6>Jessica D - Client</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img src="../assets/images/client-3.jpg" alt="Client">
+                                <div class="pt_100">
+                                    <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut
+                                        vehicula eu consectetur elit at. Nulla erat nunc nisl dui sed cras semper vitae.
+                                        Tempor odio ullamcorper non sed dignissim eu egestas fusce arcu.</p>
+                                    <h6>Serimo K - Client</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img src="../assets/images/client-1.jpg" alt="Client">
+                                <div class="pt_100">
+                                    <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut
+                                        vehicula eu consectetur elit at. Nulla erat nunc nisl dui sed cras semper vitae.
+                                        Tempor odio ullamcorper non sed dignissim eu egestas fusce arcu.</p>
+                                    <h6>Antonio H - Client</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img src="../assets/images/client-2.jpg" alt="Client">
+                                <div class="pt_100">
+                                    <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut
+                                        vehicula eu consectetur elit at. Nulla erat nunc nisl dui sed cras semper vitae.
+                                        Tempor odio ullamcorper non sed dignissim eu egestas fusce arcu.</p>
+                                    <h6>Jessica D - Client</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img src="../assets/images/client-3.jpg" alt="Client">
+                                <div class="pt_100">
+                                    <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut
+                                        vehicula eu consectetur elit at. Nulla erat nunc nisl dui sed cras semper vitae.
+                                        Tempor odio ullamcorper non sed dignissim eu egestas fusce arcu.</p>
+                                    <h6>Serimo K - Client</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img src="../assets/images/client-1.jpg" alt="Client">
+                                <div class="pt_100">
+                                    <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut
+                                        vehicula eu consectetur elit at. Nulla erat nunc nisl dui sed cras semper vitae.
+                                        Tempor odio ullamcorper non sed dignissim eu egestas fusce arcu.</p>
+                                    <h6>Antonio H - Client</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img src="../assets/images/client-2.jpg" alt="Client">
+                                <div class="pt_100">
+                                    <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut
+                                        vehicula eu consectetur elit at. Nulla erat nunc nisl dui sed cras semper vitae.
+                                        Tempor odio ullamcorper non sed dignissim eu egestas fusce arcu.</p>
+                                    <h6>Jessica D - Client</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img src="../assets/images/client-3.jpg" alt="Client">
+                                <div class="pt_100">
+                                    <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut
+                                        vehicula eu consectetur elit at. Nulla erat nunc nisl dui sed cras semper vitae.
+                                        Tempor odio ullamcorper non sed dignissim eu egestas fusce arcu.</p>
+                                    <h6>Serimo K - Client</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog Section -->
+        <section class="blog_sec pt_200 pb_200">
+            <div class="container">
+                <div class="mb_80 text-center">
+                    <h6>BLOG</h6>
+                    <h3>Our blog for you</h3>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <img src="../assets/images/blog-1.jpg" alt="Blog" class="img-fluid">
+                        <h6 class="text-white">The Art of Astrology Decoding the...</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur. Pellen sectetur elit at erat nunc nisl <a
+                                href="#"><i>see more</i></a></p>
+                    </div>
+                    <div class="col-3">
+                        <img src="../assets/images/blog-2.jpg" alt="Blog" class="img-fluid">
+                        <h6 class="text-white">The Art of Astrology Decoding the...</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur. Pellen sectetur elit at erat nunc nisl <a
+                                href="#"><i>see more</i></a></p>
+                    </div>
+                    <div class="col-3">
+                        <img src="../assets/images/blog-3.jpg" alt="Blog" class="img-fluid">
+                        <h6 class="text-white">The Art of Astrology Decoding the...</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur. Pellen sectetur elit at erat nunc nisl <a
+                                href="#"><i>see more</i></a></p>
+                    </div>
+                    <div class="col-3">
+                        <img src="../assets/images/blog-4.jpg" alt="Blog" class="img-fluid">
+                        <h6 class="text-white">The Art of Astrology Decoding the...</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur. Pellen sectetur elit at erat nunc nisl <a
+                                href="#"><i>see more</i></a></p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="container">
+            <div class="row gx-0 gap_80 justify-content-between">
+                <div class="col-auto">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/images/boodoo.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dolor sit amet <br> consectetur. Pellen sectetur elit at <br> erat.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-auto">
+                    <ul>
+                        <li>
+                            <h6 class="text-white">SERVICES</h6>
+                        </li>
+                        <li>
+                            <a href="#">Astrological Forecasts</a>
+                        </li>
+                        <li>
+                            <a href="#">Astrological Report</a>
+                        </li>
+                        <li>
+                            <a href="#">Horoscope Readings</a>
+                        </li>
+                        <li>
+                            <a href="#">Love Compatibility</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-auto">
+                    <ul>
+                        <li>
+                            <h6 class="text-white">LINK</h6>
+                        </li>
+                        <li>
+                            <a href="#">Term Of Use</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-auto">
+                    <ul>
+                        <li>
+                            <h6 class="text-white">CONTACT US</h6>
+                        </li>
+                        <li>
+                            <a href="#">+12 2629 7828</a>
+                        </li>
+                        <li>
+                            <a href="#">boodoo@domain.com</a>
+                        </li>
+                        <li>
+                            <a href="#">112 Washtucna,Washington</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-auto">
+                    <ul>
+                        <li>
+                            <h6 class="text-white">MAPS</h6>
+                        </li>
+                        <li>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3416444.189268806!2d54.503682027074596!3d-20.177805725720052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x217c512c4d376c97%3A0x9eb5e907da8e59eb!2sBoodoo%20House!5e0!3m2!1sen!2sin!4v1678965704321!5m2!1sen!2sin"
+                                width="320" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center">
+                <p>copyright@2023 Boodoo All Right Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!-- swiper slider js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
     <!-- Bootstrap Script -->
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <!-- local js -->
+    <script src="../assets/js/script.js"></script>
 </body>
 
 </html>
