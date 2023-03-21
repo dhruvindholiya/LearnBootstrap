@@ -127,12 +127,16 @@ h6 {
     color: var(--white);
 }
 /* ========== Header ========== */
-header {
+/* header {
     position: fixed;
     width: 100%;
     z-index: 9;
-    padding: 2rem 0;
+    padding: 4rem 0;
+    transition: all 0.3s;
+}
+.header_scrolled header {
     background-color: #000000;
+    padding: 2rem 0;
 }
 .main_header {
     display: flex;
@@ -143,7 +147,7 @@ header {
     font-weight: 700;
     line-height: 2.4rem;
     margin-left: 5rem;
-}
+} */
 
 /* ========== Hero section CSS ========== */
 .hero_sec {
@@ -157,6 +161,7 @@ header {
     background-image: url('../images/hero-bg.png');
     background-repeat: no-repeat;
     background-position: top center;
+    background-size: contain;
     position: absolute;
     inset: 0;
     opacity: 0.1;
@@ -178,10 +183,14 @@ header {
     margin-bottom: 2rem;   
 }
 .discover_sec .about_part .img_box {
-    padding-right: 9rem;
+    padding-right: 8rem;
     border-right: 0.2rem solid var(--white);
     margin-bottom: 10rem;
     height: 50rem;
+}
+.discover_sec .about_part .img_box img {
+    height: 100%;
+    width: 100%;
 }
 .discover_sec .about_part .img_box + p {
     max-width: 54rem;
@@ -233,7 +242,7 @@ header {
     background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
 }
 .why_sec h4 {
-    font-size: 3.2rem;
+    font-size: 3rem;
     line-height: 4.4rem;
     margin:  3rem 0;
 }
@@ -283,9 +292,6 @@ form label.form-label {
     text-transform: uppercase;
     margin-bottom: 3rem;
 }
-form input.form-control {
-    margin-bottom: 8rem;
-}
 form input.form-control,
 form select.form-select {
     border: 0.2rem solid var(--white);
@@ -297,6 +303,7 @@ form select.form-select {
     line-height: 3.3rem;
     color: var(--white);
     height: 10rem;
+    margin-bottom: 8rem;
 }
 form select.form-select option {
     background-color: #000;
@@ -350,7 +357,7 @@ form input::placeholder {
     border: 0.2rem solid var(--white);
     padding: 6rem 7.3rem;
 }
-.membership_sec h3 {
+.membership_sec .card_block h3 {
     margin: 3rem 0;
 }
 .membership_sec h3 span {
@@ -444,7 +451,6 @@ form input::placeholder {
     position: absolute;
     top: -5rem;
     left: -3rem;
-    z-index: 999;
 }
 .client_sec .card h6 {
     color: var(--white);
@@ -468,6 +474,7 @@ form input::placeholder {
 .blog_sec img {
     width: 100%;
     max-height: 45rem;
+    height: 100%;
 }
 .blog_sec img + h6 {
     margin: 6rem 0 2rem;
@@ -500,16 +507,355 @@ footer > div > div:last-of-type {
     padding-bottom: 4.5rem;
 }
 
+/* ==================================
+========== RESPONSIVE CSS ===========
+===================================== */
+
+@media screen and (max-width: 1919px) {
+    h1 {
+        font-size: 12rem;
+        line-height: 15rem;
+    }
+    h2 {
+        font-size: 10rem;
+        line-height: 14rem;
+    }
+    .service_sec .service_block {
+        max-width: 65rem;
+    }
+    .membership_sec .card_inner {
+        padding: 6rem;
+    }
+}
+
+@media screen and (max-width: 1649px) {
+    h1 {
+        font-size: 10rem;
+        line-height: 13rem;
+    }
+    h2,
+    .horoscope_sec h2 {
+        font-size: 8rem;
+        line-height: 10rem;
+    }
+    h3 {
+        font-size: 7rem;
+        line-height: 10rem;
+    }
+    h4 {
+        font-size: 3.5rem;
+        line-height: 5rem;
+    }
+    h5 {
+        font-size: 4rem;
+        line-height: 6rem;
+    }
+    .gap_80 {
+        gap: 4rem;
+    }
+    .hero_sec {
+        padding: 25rem 0 22rem;
+    }
+    .discover_sec .img_box {
+        width: 14rem;
+        margin: 0 auto 2rem;
+    }
+    .discover_sec .about_part .img_box {
+        height: 45rem;
+        width: 100%;
+    }
+    .super_sec p {
+        margin-top: 18rem;
+    }
+    .service_sec .service_part {
+        gap: 8rem;
+    }
+    .service_sec .service_block {
+        max-width: 60rem;
+    }
+    .horoscope_sec img {
+        width: 14rem;
+        margin-right: 4rem;
+    }
+    .horoscope_sec .row:not(:last-child) > div:not(:last-child) {
+        margin-right: 6rem;
+    }
+    form label.form-label {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+    .appointment_sec form > div.row {
+        margin-left: calc(var(--bs-gutter-x) * -2);
+        margin-right: calc(var(--bs-gutter-x) * -2);
+    }
+    .appointment_sec form > div.row > div {
+        padding-left: calc(var(--bs-gutter-x) * 2);
+        padding-right: calc(var(--bs-gutter-x) * 2);
+    }
+    
+    form input.form-control, form select.form-select {
+        height: 8rem;
+        margin-bottom: 6rem;
+    }
+    .membership_sec .card_inner {
+        padding: 5rem;
+    }
+    .bottom_arrow {
+        height: 25rem;
+    }
+}
 
 
-
-
-
-
-
-
-
-
+@media screen and (max-width: 1399px) {
+    h1 {
+        font-size: 8rem;
+        line-height: 10rem;
+        margin-bottom: 4rem;
+    }
+    h3 {
+        font-size: 6rem;
+        line-height: 8rem;
+    }
+    h4 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    h5 {
+        font-size: 3.5rem;
+        line-height: 5rem;
+    }
+    h6 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .pt_200 {
+        padding-top: 15rem;
+    }
+    .pb_200 {
+        padding-bottom: 15rem;
+    }
+    .pt_100 {
+        padding-top: 7.5rem;
+    }
+    .pb_100 {
+        padding-bottom: 7.5rem;
+    }
+    .mt_100 {
+        margin-top: 7.5rem;
+    }
+    .mb_100 {
+        margin-bottom: 7.5rem;
+    }
+    .mb_80 {
+        margin-bottom: 5rem;
+    }
+    .red_btn  {
+        width: 25rem;
+        height: 6rem;
+    }
+    .discover_sec .img_box {
+        width: 12rem;
+    }
+    .discover_sec .img_box img {
+        width: 100%;
+    }
+    .discover_sec .about_part .img_box {
+        height: 37rem;
+        padding-right: 5rem;
+        margin-bottom: 7rem;
+    }
+    .discover_sec .about_part .content {
+        padding-left: 5rem;
+    }
+    .discover_sec .about_part .content h3 {
+        margin: 1.8rem 0 7rem;
+    }
+    h2, .horoscope_sec h2 {
+        font-size: 7rem;
+        line-height: 8rem;
+    }
+    .super_sec p {
+        margin-top: 15rem;
+    }
+    .super_sec .team_galary {
+        margin-left: 5rem;
+    }
+    .service_sec .service_part {
+        gap: 5rem;
+    }
+    .service_sec .service_block {
+        max-width: 53rem;
+    }
+    .service_sec .service_block .inner {
+        padding: 3.3rem;
+    }
+    .service_sec h5 {
+        margin: 4rem 0 1rem;
+    }
+    .why_sec p {
+        max-width: 83%;
+        margin: 0 auto;
+    }
+    .why_sec img {
+        width: 12rem;
+        margin: 0 auto;
+    }
+    .why_sec h4 {
+        line-height: 4rem;
+        margin: 3rem 0 1.5rem;
+    }
+    .horoscope_sec img {
+        width: 10rem;
+        margin-right: 2rem;
+    }
+    .horoscope_sec img {
+        width: 10rem;
+        margin-right: 2rem;
+    }
+    .appointment_sec form > div.row {
+        margin-left: calc(var(--bs-gutter-x) * -1);
+        margin-right: calc(var(--bs-gutter-x) * -1);
+    }
+    .appointment_sec form > div.row > div {
+        padding-left: calc(var(--bs-gutter-x) * 1);
+        padding-right: calc(var(--bs-gutter-x) * 1);
+    }
+    form label.form-label {
+        font-size: 1.6rem;   
+    }
+    form input.form-control, form select.form-select {
+        padding: 1rem 2rem;
+        font-size: 2rem;
+    }
+    .membership_sec .card_inner {
+        padding: 3rem;
+    }
+    .membership_sec .card_block li::before {
+        height: 3rem;
+        width: 3rem;
+        margin-right: 1rem;
+    }
+    .membership_sec .card_block a {
+        margin-top: 4rem;
+    }
+    .membership_sec .card_block a {
+        margin-top: 4rem;
+    }
+    .bottom_arrow {
+        height: 20rem;
+    }
+    .client_sec .card img {
+        height: 40rem;
+    }
+    .client_sec .card {
+        padding: 0 5rem;
+    }
+    .client_sec .card p::after {
+        width: 7rem;
+        height: 6rem;
+        top: -3rem;
+        left: -2rem;
+    }
+    .blog_sec > div > .row {
+        margin-left: calc(var(--bs-gutter-x) * -1);
+        margin-right: calc(var(--bs-gutter-x) * -1);
+    }
+    .blog_sec > div > .row > div {
+        padding-left: calc(var(--bs-gutter-x) * 1);
+        padding-right: calc(var(--bs-gutter-x) * 1);
+    }
+    .blog_sec img {
+        max-height: 35rem;
+    }
+    .blog_sec img + h6 {
+        margin: 4rem 0 2rem;
+    }
+    footer {
+        padding-bottom: 8rem;
+    }
+    footer > div > div:first-of-type {
+        padding: 5rem 0;
+    }
+    footer ul {
+        min-width: 32rem;
+    }
+    footer div div div:not(:last-child) ul {
+        margin-bottom: 5rem;
+    }
+}
+@media screen and (max-width: 1199px) {
+    h1 {
+        font-size: 7rem;
+        line-height: 9rem;
+        margin-bottom: 3rem;
+    }
+    h2, .horoscope_sec h2 {
+        font-size: 6rem;
+    }
+    h3 {
+        font-size: 5rem;
+        line-height: 7rem;
+    }
+    h4 {
+        font-size: 2.5rem;
+        line-height: 2rem;
+    }
+    h5 {
+        font-size: 3rem;
+        line-height: 5rem;
+    }
+    .mt_100 {
+        margin-top: 5rem;
+    }
+    .mb_100 {
+        margin-bottom: 5rem;
+    }
+    header {
+        padding: 2rem 0;
+    }
+    .hero_sec {
+        padding: 24rem 0 18rem;
+    }
+    .discover_sec .img_box {
+        width: 10rem;
+    }
+    .discover_sec .about_part .content h3 {
+        margin: 1.8rem 0 12rem;
+    }
+    .super_sec p {
+        margin-top: 10rem;
+    }
+    .service_sec .service_part {
+        gap: 4rem;
+    }
+    .service_sec .service_block {
+        max-width: 45rem;
+    }
+    .why_sec img {
+        width: 10rem;
+    }
+    .why_sec h4 {
+        font-size: 2.5rem;
+    }
+    .horoscope_sec img {
+        width: 9rem;
+    }
+    .horoscope_sec .row:not(:last-child) > div:not(:last-child) {
+        margin-right: 3rem;
+    }
+    form input.form-control, form select.form-select {
+        margin-bottom: 3rem;
+    }
+    .membership_sec .red_block {
+        order: 3;
+    }
+    footer div div div:not(:last-child) ul {
+        margin-bottom: 1rem;
+    }
+    footer ul li:not(:first-child) {
+        margin-top: 1rem;
+    }
+}
 
 
 
@@ -530,7 +876,7 @@ footer > div > div:last-of-type {
 
 @media screen and (min-width: 1920px) {
     .container {
-        max-width: 161rem;
+        max-width: 164rem;
         padding: 0 2rem;
     }
 }

@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Bootstrap CSS -->
 
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
 
     <!-- Local CSS -->
@@ -26,13 +26,41 @@
 </head>
 
 <body>
-    <header>
+    <header class="navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../assets/images/boodoo.png" alt="Boodoo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Page</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- <header>
         <div class="container">
-            <div class="main_header">
+            <div class="main_header navbar">
                 <a href="#">
                     <img src="../assets/images/boodoo.png" alt="Boodoo">
                 </a>
-                <nav>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse">
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
@@ -43,7 +71,7 @@
                 </nav>
             </div>
         </div>
-    </header>
+    </header> -->
     <main>
         <!-- Hero Section -->
         <section class="hero_sec">
@@ -59,31 +87,31 @@
         <section class="discover_sec pb_200">
             <div class="container">
                 <div class="row pb_200 justify-content-between">
-                    <div class="col-auto text-center discover_item">
+                    <div class="col-2 text-center discover_item">
                         <div class="img_box">
                             <img src="../assets/images/LOOPKAD.png" alt="LOOPKAD">
                         </div>
                         <h4>LOOPKAD</h4>
                     </div>
-                    <div class="col-auto text-center discover_item">
+                    <div class="col-2 text-center discover_item">
                         <div class="img_box">
                             <img src="../assets/images/SUNSHINE.png" alt="SUNSHINE">
                         </div>
                         <h4>SUNSHINE</h4>
                     </div>
-                    <div class="col-auto text-center discover_item">
+                    <div class="col-2 text-center discover_item">
                         <div class="img_box">
                             <img src="../assets/images/URNAME.png" alt="URNAME">
                         </div>
                         <h4>URNAME</h4>
                     </div>
-                    <div class="col-auto text-center discover_item">
+                    <div class="col-2 text-center discover_item">
                         <div class="img_box">
                             <img src="../assets/images/LOTUSIN.png" alt="LOTUSIN">
                         </div>
                         <h4>LOTUSIN</h4>
                     </div>
-                    <div class="col-auto text-center discover_item">
+                    <div class="col-2 text-center discover_item">
                         <div class="img_box">
                             <img src="../assets/images/GEARING.png" alt="GEARING">
                         </div>
@@ -93,7 +121,7 @@
                 <div class="row about_part gx-0">
                     <div class="col-6">
                         <div class="img_box">
-                            <img src="../assets/images/Discover-main-img.jpg" class="img-fluid"
+                            <img src="../assets/images/Discover-main-img.jpg"
                                 alt="Discover Everything Yourself WITH BOODOO">
                         </div>
                         <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut vehicula eu
@@ -135,7 +163,7 @@
                                 <img class="img-fluid" src="../assets/images/super-team-4.jpg" alt="Our team member">
                             </div>
                         </div>
-                        <h2 class="mt_100">BOODOO TEAM</h2>
+                        <h2 class="mt_100 text-end">BOODOO TEAM</h2>
                     </div>
                 </div>
             </div>
@@ -195,19 +223,19 @@
                     <h3>WHY CHOOSE BOODOO</h3>
                 </div>
                 <div class="row gx-0 justify-content-between">
-                    <div class="col-3 text-center">
+                    <div class="col-xxl-3 col-4 text-center">
                         <img src="../assets/images/Great-experience.png" class="img-fluid" alt="Great Experience">
                         <h4>Great Experience</h4>
                         <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut vehicula eu
                             consec.</p>
                     </div>
-                    <div class="col-3 text-center">
+                    <div class="col-xxl-3 col-4 text-center">
                         <img src="../assets/images/Data-privacy.png" class="img-fluid" alt="Data Privacy">
                         <h4>Data Privacy</h4>
                         <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut vehicula eu
                             consec.</p>
                     </div>
-                    <div class="col-3 text-center">
+                    <div class="col-xxl-3 col-4 text-center">
                         <img src="../assets/images/Best-customer-support.png" class="img-fluid"
                             alt="Best Customer Support">
                         <h4>Best Customer Support</h4>
@@ -248,7 +276,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-end gx-0 mb_100">
+                <div class="row justify-content--xl-end gx-0 mb_100">
                     <div class="col-auto d-flex align-items-center">
                         <img src="../assets/images/cancer.png" alt="CANCER">
                         <div class="content">
@@ -299,11 +327,11 @@
         <section class="appointment_sec pb_200">
             <div class="container">
                 <div class="row gx-5 align-items-center justify-content-between">
-                    <div class="col-4 title_part">
+                    <div class="col-xl-4 col-12 title_part text-xl-start text-center mb_80 mb-xl-0">
                         <h6>Appointment</h6>
                         <h3>LET'S MEET WITH OUR TEAM</h3>
                     </div>
-                    <div class="col-7">
+                    <div class="col-xl-7 col-12">
                         <form action="/">
                             <div class="row">
                                 <div class="col-6">
@@ -328,8 +356,8 @@
                                     <label class="form-label">DATE*</label>
                                     <input type="date" class="form-control" placeholder="Choose Date">
                                 </div>
-                                <div class="col-12">
-                                    <button class="red_btn" type="submit">BookNow</button>
+                                <div class="col-12 text-xl-start text-center">
+                                    <button class="red_btn mt-xl-0 mt_100" type="submit">BookNow</button>
                                 </div>
                             </div>
                         </form>
@@ -355,11 +383,11 @@
         <section class="membership_sec pt_200 pb_200">
             <div class="container">
                 <div class="text-center mb_80">
-                    <h6 class="text-white">Membership</h6>
+                    <h6>Membership</h6>
                     <h3>Membership Price</h3>
                 </div>
-                <div class="row gap_80 justify-content-between">
-                    <div class="col card_block">
+                <div class="row gx-0 gap_80 justify-content-xl-between justify-content-center">
+                    <div class="col-xl-auto col-5 card_block">
                         <div class="card_inner">
                             <h6 class="text-center text-white">STARTER PRICE</h6>
                             <h3>$44/<span>month</span></h3>
@@ -380,7 +408,7 @@
                             <a href="#" class="red_btn w-100">Choose now</a>
                         </div>
                     </div>
-                    <div class="col card_block">
+                    <div class="col-xl-auto col-5 card_block red_block">
                         <div class="card_inner red_bg">
                             <h6 class="text-center text-white">BEST VALUE</h6>
                             <h3>$72/<span>month</span></h3>
@@ -401,7 +429,7 @@
                             <a href="#" class="red_btn w-100">Choose now</a>
                         </div>
                     </div>
-                    <div class="col card_block">
+                    <div class="col-xl-auto col-5 card_block">
                         <div class="card_inner">
                             <h6 class="text-center text-white">PREMIUM PRICE</h6>
                             <h3>$122/<span>month</span></h3>
@@ -547,26 +575,26 @@
                     <h6>BLOG</h6>
                     <h3>Our blog for you</h3>
                 </div>
-                <div class="row">
-                    <div class="col-3">
+                <div class="row gy-xl-0 gy-5">
+                    <div class="col-xl-3 col-6">
                         <img src="../assets/images/blog-1.jpg" alt="Blog" class="img-fluid">
                         <h6 class="text-white">The Art of Astrology Decoding the...</h6>
                         <p>Lorem ipsum dolor sit amet consectetur. Pellen sectetur elit at erat nunc nisl <a
                                 href="#"><i>see more</i></a></p>
                     </div>
-                    <div class="col-3">
+                    <div class="col-xl-3 col-6">
                         <img src="../assets/images/blog-2.jpg" alt="Blog" class="img-fluid">
                         <h6 class="text-white">The Art of Astrology Decoding the...</h6>
                         <p>Lorem ipsum dolor sit amet consectetur. Pellen sectetur elit at erat nunc nisl <a
                                 href="#"><i>see more</i></a></p>
                     </div>
-                    <div class="col-3">
+                    <div class="col-xl-3 col-6">
                         <img src="../assets/images/blog-3.jpg" alt="Blog" class="img-fluid">
                         <h6 class="text-white">The Art of Astrology Decoding the...</h6>
                         <p>Lorem ipsum dolor sit amet consectetur. Pellen sectetur elit at erat nunc nisl <a
                                 href="#"><i>see more</i></a></p>
                     </div>
-                    <div class="col-3">
+                    <div class="col-xl-3 col-6">
                         <img src="../assets/images/blog-4.jpg" alt="Blog" class="img-fluid">
                         <h6 class="text-white">The Art of Astrology Decoding the...</h6>
                         <p>Lorem ipsum dolor sit amet consectetur. Pellen sectetur elit at erat nunc nisl <a
@@ -658,11 +686,13 @@
             </div>
         </div>
     </footer>
+    <script src="../assets/js/jquery.js"></script>
     <!-- swiper slider js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <!-- Bootstrap Script -->
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
     <!-- local js -->
     <script src="../assets/js/script.js"></script>
 </body>
