@@ -282,7 +282,6 @@ h6 {
 form label.form-label {
     font-weight: 700;
     font-size: 3.2rem;
-    line-height: 4.4rem;
     text-transform: uppercase;
     margin-bottom: 3rem;
 }
@@ -324,13 +323,13 @@ form input::placeholder {
     inset: 0;
     z-index: -2;
 }
-.get_started_sec .container::before {
+.get_started_sec::before {
     content: '';
     background-image: url(../images/wheel-2.svg);
     opacity: 0.1;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 92% 100%;
     position: absolute;
     inset: 0;
     z-index: -1;
@@ -409,6 +408,7 @@ form input::placeholder {
     z-index: 1;
     left: 0;
     right: auto;
+    margin-top: 0;
 }
 .swiper-button-next {
     right: 0;
@@ -419,14 +419,15 @@ form input::placeholder {
     color: var(--white);
     opacity: 1 !important;
 }
+.client_sec .swiper-slide-next .card,
 .client_sec .swiper-slide-active .card {
-    padding-right: 7.5rem;
-    max-width: 60rem;
+    padding: 0 7.5rem;
+    max-width: 62.5rem;
+}
+.client_sec .swiper-slide-active .card {
     margin-left: auto;
 }
 .client_sec .swiper-slide-next .card {
-    padding-left: 7.5rem;
-    max-width: 60rem;
     margin-right: auto;
 }
 .client_sec .card img {
@@ -443,15 +444,19 @@ form input::placeholder {
     display: block;
     background-image: url('../images/quote.svg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     position: absolute;
     top: -5rem;
     left: 0;
-}
-.client_sec .swiper-slide-next .card p::after,
-.client_sec .swiper-slide-active .card p::after {
     left: -3rem;
+}
+.client_sec .card img + div {
+    opacity: 0;
+}
+.client_sec .swiper-slide-next .card img + div,
+.client_sec .swiper-slide-active .card img + div {
+    opacity: 1;
 }
 .client_sec .card h6 {
     color: var(--white);
@@ -552,7 +557,7 @@ footer > div > div:last-of-type {
         line-height: 6rem;
     }
     .gap_80 {
-        gap: 4rem;
+        gap: 3rem;
     }
     .hero_sec {
         padding: 30rem 0 22rem;
@@ -721,9 +726,6 @@ footer > div > div:last-of-type {
         padding-left: calc(var(--bs-gutter-x) * 1);
         padding-right: calc(var(--bs-gutter-x) * 1);
     }
-    form label.form-label {
-        font-size: 1.6rem;   
-    }
     form input.form-control, form select.form-select {
         padding: 1rem 2rem;
         font-size: 2rem;
@@ -746,18 +748,17 @@ footer > div > div:last-of-type {
         height: 20rem;
     }
     .client_sec .card img {
-        height: 40rem;
+        height: 35rem;
     }
-    .client_sec .card {
+    .client_sec .swiper-slide-next .card, 
+    .client_sec .swiper-slide-active .card {
         padding: 0 5rem;
+        max-width: 45rem;
     }
     .client_sec .card p::after {
         width: 7rem;
         height: 6rem;
         top: -3rem;
-    }
-    .client_sec .swiper-slide-next .card p::after,
-    .client_sec .swiper-slide-active .card p::after {
         left: -2rem;
     }
     .blog_sec > div > .row {
@@ -772,7 +773,7 @@ footer > div > div:last-of-type {
         max-height: 35rem;
     }
     .blog_sec img + h6 {
-        margin: 4rem 0 2rem;
+        margin: 2rem 0 0;
     }
     footer {
         padding-bottom: 8rem;
@@ -851,10 +852,25 @@ footer > div > div:last-of-type {
         margin-right: 3rem;
     }
     form input.form-control, form select.form-select {
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
     }
     .membership_sec .red_block {
         order: 3;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        top: 25%;
+    }
+    .client_sec .swiper-slide-next .card, 
+    .client_sec .swiper-slide-active .card {
+        padding: 0 2.5rem;
+        max-width: 37rem;
+    }
+    .client_sec .card p::after {
+        width: 6rem;
+        height: 5rem;
+        top: -2.5rem;
+        left: -1.5rem;
     }
     footer div div div:not(:last-child) ul {
         margin-bottom: 1rem;
@@ -865,6 +881,39 @@ footer > div > div:last-of-type {
 }
 
 @media screen and (max-width: 991px) {
+    h1 {
+        font-size: 5rem;
+        line-height: 6rem;
+        margin-bottom: 2rem;
+    }
+    h4,
+    .why_sec h4 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    h3,
+    h2, .horoscope_sec h2 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+    h6 {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+    .mb_80 {
+        margin-bottom: 4rem;
+    }
+    .pt_200 {
+        padding-top: 10rem;
+    }
+    .pb_200 {
+        padding-bottom: 10rem;
+    }
+    .red_btn {
+        width: 20rem;
+        height: 5.5rem;
+        font-size: 2rem;
+    }
     .header img {
         width: 15rem;
     }
@@ -907,8 +956,119 @@ footer > div > div:last-of-type {
         display: block;
         font-size: 3rem;
     }
+    .hero_sec {
+        padding: 22rem 0 12rem;
+    }
+    .about_part {
+        flex-direction: column-reverse;
+    }
+    .discover_sec .about_part .content h3 {
+        margin: 0 0 5rem;
+    }
+    .discover_sec .about_part .content {
+        padding: 0;
+    }
+    .discover_sec .about_part .img_box {
+        padding-right: 3rem;
+        margin: 0 3rem 0 0;
+        max-width: 100%;
+        width: auto;
+        height: 35rem;
+    }
+    .super_sec p {
+        margin: 1rem 0 5rem;
+    }
+    .super_sec .team_galary {
+        margin-left: 0;
+    }
+    .why_sec > div > div > div:not(:last-child) {
+        margin-bottom: 5rem;
+    }
+    .service_sec .service_block {
+        max-width: 55rem;
+    }
+    body .horoscope_sec h2 {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+    form label.form-label {
+        font-size: 1.6rem;
+    }
+    form input.form-control, form select.form-select {
+        height: 6rem;
+        font-size: 1.6rem;
+    }
+    .membership_sec .card_block {
+        max-width: 33rem;
+    }
+    .membership_sec .card_inner {
+        padding: 2.5rem;
+    }
+    .membership_sec .card_block li::before {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    .bottom_arrow {
+        height: 15rem;
+        margin-bottom: 0;
+    }
+    .client_sec .client_slider .swiper-wrapper {
+        padding-top: 100px;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        top: 0;
+    }
+    .client_sec .swiper-slide-next .card, .client_sec .swiper-slide-active .card {
+        max-width: 100%;
+        padding: 0 1.5rem;
+    }
+    footer {
+        padding-bottom: 5rem;
+    }
 }
-
+@media screen and (max-width: 767px) {
+    h3, h2, .horoscope_sec h2 {
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+    h5 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .pt_200 {
+        padding-top: 7.5rem;
+    }
+    .pb_200 {
+        padding-bottom: 7.5rem;
+    }
+    .hero_sec {
+        padding: 18rem 0 10rem;
+    }
+    .discover_sec .about_part .img_box {
+        height: 25rem;
+        padding-right: 2rem;
+        margin-right: 2rem;
+    }
+    .service_sec .service_block img {
+        height: 25rem;
+    }
+    .service_sec .service_part {
+        gap: 3rem;
+    }
+    .service_sec .service_block .inner {
+        padding: 2.5rem;
+    }
+    .membership_sec .card_block {
+        max-width: 40rem;
+    }
+    footer,
+    footer > div > div:last-of-type {
+        padding-bottom: 3rem;
+    }
+    footer ul {
+        min-width: 24rem;
+    }
+}
 
 
 
