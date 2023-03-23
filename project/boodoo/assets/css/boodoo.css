@@ -127,27 +127,21 @@ h6 {
     color: var(--white);
 }
 /* ========== Header ========== */
-/* header {
-    position: fixed;
-    width: 100%;
-    z-index: 9;
+.header.bg-dark {
+    background-color: transparent !important;
+    z-index: 9999;
     padding: 4rem 0;
     transition: all 0.3s;
 }
-.header_scrolled header {
-    background-color: #000000;
+.header_scrolled .header.bg-dark {
+    background-color: #000000 !important;
     padding: 2rem 0;
 }
-.main_header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.main_header nav a {
+.header nav a:not(a.navbar-brand) {
     font-weight: 700;
     line-height: 2.4rem;
     margin-left: 5rem;
-} */
+}
 
 /* ========== Hero section CSS ========== */
 .hero_sec {
@@ -177,7 +171,7 @@ h6 {
 
 /* ========== Discover Section ========== */
 .discover_sec {
-    background: linear-gradient(0, #000000 16.49%, #C8191C 274.79%);
+    background: linear-gradient(0, #000000 16.49%, #C8191C 265%);
 }
 .discover_sec .img_box {
     margin-bottom: 2rem;   
@@ -249,7 +243,7 @@ h6 {
 
 /* ============== Horoscope Section ============= */
 .horoscope_sec {
-    background: linear-gradient(0deg, #000000 16.49%, #C8191C 274.79%);
+    background: linear-gradient(0deg, #000000 16.49%, #C8191C 260%);
 
 }
 .horoscope_sec img {
@@ -408,10 +402,6 @@ form input::placeholder {
     left: 50%;
     bottom: 0.6rem;
 }
-.client_sec .client_slider {
-    max-width: 125rem;
-    position: static;
-}
 .swiper-button-next, .swiper-button-prev {
     display: inline-block;
     position: absolute;
@@ -429,8 +419,15 @@ form input::placeholder {
     color: var(--white);
     opacity: 1 !important;
 }
-.client_sec .card {
-    padding: 0 7.5rem;
+.client_sec .swiper-slide-active .card {
+    padding-right: 7.5rem;
+    max-width: 60rem;
+    margin-left: auto;
+}
+.client_sec .swiper-slide-next .card {
+    padding-left: 7.5rem;
+    max-width: 60rem;
+    margin-right: auto;
 }
 .client_sec .card img {
     height: 51rem;
@@ -450,6 +447,10 @@ form input::placeholder {
     background-position: center;
     position: absolute;
     top: -5rem;
+    left: 0;
+}
+.client_sec .swiper-slide-next .card p::after,
+.client_sec .swiper-slide-active .card p::after {
     left: -3rem;
 }
 .client_sec .card h6 {
@@ -461,7 +462,7 @@ form input::placeholder {
 /* ========== Blog Section CSS =========  */
 .blog_sec {
     background: linear-gradient(0deg, #000000 16.49%, #C8191C
-     274.79%);
+    260%);
 }
 .blog_sec > div > .row {
     margin-left: calc(var(--bs-gutter-x) * -1.7);
@@ -554,7 +555,7 @@ footer > div > div:last-of-type {
         gap: 4rem;
     }
     .hero_sec {
-        padding: 25rem 0 22rem;
+        padding: 30rem 0 22rem;
     }
     .discover_sec .img_box {
         width: 14rem;
@@ -754,6 +755,9 @@ footer > div > div:last-of-type {
         width: 7rem;
         height: 6rem;
         top: -3rem;
+    }
+    .client_sec .swiper-slide-next .card p::after,
+    .client_sec .swiper-slide-active .card p::after {
         left: -2rem;
     }
     .blog_sec > div > .row {
@@ -784,6 +788,9 @@ footer > div > div:last-of-type {
     }
 }
 @media screen and (max-width: 1199px) {
+    .header.bg-dark {
+        padding: 3rem 0;
+    }
     h1 {
         font-size: 7rem;
         line-height: 9rem;
@@ -814,10 +821,10 @@ footer > div > div:last-of-type {
         padding: 2rem 0;
     }
     .hero_sec {
-        padding: 24rem 0 18rem;
+        padding: 30rem 0 17rem;
     }
     .discover_sec .img_box {
-        width: 10rem;
+        width: 9rem;
     }
     .discover_sec .about_part .content h3 {
         margin: 1.8rem 0 12rem;
@@ -832,7 +839,7 @@ footer > div > div:last-of-type {
         max-width: 45rem;
     }
     .why_sec img {
-        width: 10rem;
+        width: 9rem;
     }
     .why_sec h4 {
         font-size: 2.5rem;
@@ -857,6 +864,50 @@ footer > div > div:last-of-type {
     }
 }
 
+@media screen and (max-width: 991px) {
+    .header img {
+        width: 15rem;
+    }
+    .header nav a:not(a.navbar-brand) {
+        margin: 1.5rem 0;
+    }
+    .header .navbar-collapse {
+        text-align: center;
+        position: absolute;
+        inset: 0;
+        height: 100vh !important;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: -1;
+        backdrop-filter: blur(10px);
+    }
+    .header .navbar-collapse .navbar-nav {
+        justify-content: center;
+        height: 100%;
+    }
+    .header.navbar-dark .navbar-toggler {
+        color: var(--white);
+        border: none;
+        padding: 0;
+        box-shadow: none;
+    }
+    .header.navbar-dark .navbar-toggler-icon {
+        background: none;
+        height: auto;
+        width: auto;
+    }
+    .header.navbar-dark .navbar-toggler-icon i {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .header.navbar-dark button[aria-expanded="false"] i:last-child,
+    .header.navbar-dark button[aria-expanded="true"] i:first-child {
+        display: none;
+    }
+    .header.navbar-dark button[aria-expanded="true"] i:last-child {
+        display: block;
+        font-size: 3rem;
+    }
+}
 
 
 
