@@ -10,6 +10,10 @@
     <!-- Alegreya font -->
     <link rel="stylesheet" href="../assets/css/font.css">
 
+    <!-- Head animate css -->
+    <link rel="stylesheet" href="../assets/css/head-animate.css">
+    <link rel="stylesheet" href="../assets/css/head-animate-base.css">
+
     <!-- Swiper slider cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
@@ -57,6 +61,14 @@
         <section class="hero_sec">
             <div class="container">
                 <h1>YOUR PATH TO UNDERSTANDING <span class="red_text">ZODIAC</span></h1>
+                <h1 class="cd-headline letters letters scale">
+                    <span>YOUR PATH TO UNDERSTANDING</span> 
+                    <span class="cd-words-wrapper waiting red_text">
+                        <b class="is-visible">ZODIAC</b>
+                        <b>YASH</b>
+                        <b>MEET</b>
+                    </span>
+                </h1>
                 <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut vehicula eu consectetur
                     elit at. Nulla erat nunc nisl dui sed cras semper vitae. odio ullamcorper non sed dignissim eu.</p>
                 <a class="red_btn" href="#">Get Started</a>
@@ -293,19 +305,19 @@
                 <div class="row pt_200 justify-content-md-between justify-content-center">
                     <div class="col-md-auto col-5 text-center mb-md-0 mb_80">
                         <h6>Partner</h6>
-                        <h2>189+</h2>
+                        <h2 id="partner">189+</h2>
                     </div>
                     <div class="col-md-auto col-5 text-center mb-md-0 mb_80">
                         <h6>TEAMS</h6>
-                        <h2>322+</h2>
+                        <h2 id="teams">322+</h2>
                     </div>
                     <div class="col-md-auto col-5 text-center mb-md-0 mb_80">
                         <h6>HAPPY CLient</h6>
-                        <h2>98K+</h2>
+                        <h2 id="happyClient">98K+</h2>
                     </div>
                     <div class="col-md-auto col-5 text-center mb-md-0 mb_80">
                         <h6>serviced</h6>
-                        <h2>112k+</h2>
+                        <h2 id="serviced">112k+</h2>
                     </div>
                 </div>
             </div>
@@ -591,6 +603,9 @@
                 </div>
             </div>
         </section>
+        <button type="button" id="pageScrolled">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
     </main>
     <footer>
         <div class="container">
@@ -674,12 +689,22 @@
             </div>
         </div>
     </footer>
+
+    <!-- jQuery -->
     <script src="../assets/js/jquery.js"></script>
+
+    <!-- Head animate js -->
+    <script src="../assets/js/head-animate-main.js"></script>
+    <script src="../assets/js/head-animate.js"></script>
+
     <!-- swiper slider js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <!-- Bootstrap Script -->
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Counter script cdn -->
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
 
     <!-- local js -->
     <script src="../assets/js/script.js"></script>
