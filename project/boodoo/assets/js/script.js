@@ -1,22 +1,13 @@
-// add and remove class for header
-$(window).scroll(function () {
-    var scroll = $(window).scrollTop();
-    if (scroll >= 50) {
-        $("body").addClass("header_scrolled");
-    } else {
-        $("body").removeClass("header_scrolled");
-    }
-});
-
-// scroll page to top when click on the button
+// page scroll button show and header bg change
 $(document).ready(function () {
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
         if (scroll >= 100) {
             $("#pageScrolled").addClass('show');
-
+            $("body").addClass("header_scrolled");
         } else {
             $("#pageScrolled").removeClass('show');
+            $("body").removeClass("header_scrolled");
         }
     });
     $("#pageScrolled").click(function () {
@@ -24,9 +15,13 @@ $(document).ready(function () {
             scrollTop: 0
         });
     });
+    $('.faq_sec .faq_ques').click(function(){
+        $(this).parent().toggleClass('active');
+        $(this).parent().siblings().removeClass('active');
+    });
 });
 
-// client slider
+// ===== client slider =======
 var swiper = new Swiper(".client_slider", {
     slidesPerView: 1,
     spaceBetween: 0,
@@ -68,3 +63,5 @@ IO.observe(el);
 IO.observe(el1);
 IO.observe(el2);
 IO.observe(el3);
+
+// ===== client slider end =======

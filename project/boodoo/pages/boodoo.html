@@ -7,20 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 
-    <!-- Alegreya font -->
-    <link rel="stylesheet" href="../assets/css/font.css">
+    <!-- Cursor CSS -->
+    <link rel="stylesheet" href="../assets/css/cursor.css">
 
     <!-- Head animate css -->
     <link rel="stylesheet" href="../assets/css/head-animate.css">
-    <link rel="stylesheet" href="../assets/css/head-animate-base.css">
 
     <!-- Swiper slider cdn -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../assets/css/swiper.css">
 
     <!-- fontawesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Alegreya font -->
+    <link rel="stylesheet" href="../assets/css/font.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
@@ -58,15 +60,15 @@
     </header>
     <main>
         <!-- Hero Section -->
-        <section class="hero_sec">
+        <section id="particles-js" class="hero_sec">
             <div class="container">
-                <h1>YOUR PATH TO UNDERSTANDING <span class="red_text">ZODIAC</span></h1>
-                <h1 class="cd-headline letters letters scale">
-                    <span>YOUR PATH TO UNDERSTANDING</span> 
+                <h1 class="cd-headline letters scale">
+                    <span>YOUR PATH TO UNDERSTANDING</span>
                     <span class="cd-words-wrapper waiting red_text">
                         <b class="is-visible">ZODIAC</b>
                         <b>YASH</b>
                         <b>MEET</b>
+                        <b>JANKI</b>
                     </span>
                 </h1>
                 <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut vehicula eu consectetur
@@ -603,6 +605,91 @@
                 </div>
             </div>
         </section>
+
+        <!-- Faq Section -->
+        <section class="faq_sec pb_100">
+            <div class="container">
+                <div class="mb_80 text-center">
+                    <h6>FAQ's</h6>
+                    <h3>frequently asked questions</h3>
+                </div>
+                <ul class="faq_part mx-auto">
+                    <li>
+                        <div class="faq_ques">
+                            <h6>Why BOODOO &CO. is different? <i class="fa-sharp fa-solid fa-chevron-down"></i></h6>
+                        </div>
+                        <div class="faq_ans">
+                            <p>BOODOO &CO. stones are created, polished and set to the highest standards. The chemical
+                                formula has been refined to deliver the best visual results. We traditionally cut,
+                                polish and set our stones to achieve exceptional refraction, dispersion and reflection.
+                                We only use 925 silver plated with precious metals.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="faq_ques">
+                            <h6>How do take care of BOODOO &CO. jewellery? <i
+                                    class="fa-sharp fa-solid fa-chevron-down"></i></h6>
+                        </div>
+                        <div class="faq_ans">
+                            <p>Your jewellery can easily be cleaned with warm water and some soap.
+                                You can also take it to a jeweller who will use special cleaning devices and treatments.
+                                If taken care of properly, BOODOO &CO. jewellery will stay brilliant for a long time.
+                                Please see detailed care advice in Care & Sizing section.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="faq_ques">
+                            <h6>How do I exchange an item? <i class="fa-sharp fa-solid fa-chevron-down"></i></h6>
+                        </div>
+                        <div class="faq_ans">
+                            <p>Our top priority is customer satisfaction. You may exchange your online order up to 14
+                                days after receipt.</p>
+                            <br>
+                            <p>Please <a href="">email: boodooco@mail.com</a> to start the return / exchange process.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="faq_ques">
+                            <h6>How do I track my order? <i class="fa-sharp fa-solid fa-chevron-down"></i></h6>
+                        </div>
+                        <div class="faq_ans">
+                            <p>After processing your payment, we will send you a confirmation email with the shipping
+                                detail.
+                                You will be able to track and manage your delivery options online on their website.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="faq_ques">
+                            <h6>What is your returns policy? <i class="fa-sharp fa-solid fa-chevron-down"></i></h6>
+                        </div>
+                        <div class="faq_ans">
+                            <p>Please see the SHIPPING AND RETURN section at boodooco.com/shipping-and-returns.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="faq_ques">
+                            <h6>What are your delivery options? <i class="fa-sharp fa-solid fa-chevron-down"></i></h6>
+                        </div>
+                        <div class="faq_ans">
+                            <p>What are your delivery options? Standard delivery time: 3-4: Business Days after
+                                processing and shipping Standard Cost: £4.45 </p>
+                            <br>
+                            <p>Free standard shipping over £60 </p>
+                            <br>
+                            <p>Express delivery time: 1-2 Business Days after processing and shipping
+                                Express Cost: £10</p>
+                            <br>
+                            <p>For international purchases, please contact us at <a href="">boodooco@mail.com</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Cursor change -->
+        <div class="myBox"></div>
+
+        <!-- Page scroll top button -->
         <button type="button" id="pageScrolled">
             <i class="fa-solid fa-arrow-up"></i>
         </button>
@@ -693,9 +780,17 @@
     <!-- jQuery -->
     <script src="../assets/js/jquery.js"></script>
 
+    <!-- Particle js -->
+    <script src="../assets/js/particles.min.js"></script>
+    <script src="../assets/js/particle-app.js"></script>
+
     <!-- Head animate js -->
     <script src="../assets/js/head-animate-main.js"></script>
     <script src="../assets/js/head-animate.js"></script>
+
+    <!-- cursor js -->
+    <script src="../assets/js/cursor-main.js"></script>
+    <script src="../assets/js/cursor.js"></script>
 
     <!-- swiper slider js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>

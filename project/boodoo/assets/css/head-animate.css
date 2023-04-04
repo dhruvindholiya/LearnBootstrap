@@ -3,95 +3,8 @@
 Primary style
 
 -------------------------------- */
-*, *::after, *::before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-html * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.6rem;
-  font-family: "Source Sans Pro", sans-serif;
-  color: #aebcb9;
-  background-color: #0d0d0d;
-}
-
-a {
-  text-decoration: none;
-}
-
-.cd-title {
-  position: relative;
-  height: 160px;
-  line-height: 230px;
-  text-align: center;
-}
-.cd-title h1 {
-  font-size: 2.4rem;
-  font-weight: 700;
-}
-@media only screen and (min-width: 768px) {
-  .cd-title {
-    line-height: 250px;
-  }
-}
-@media only screen and (min-width: 1170px) {
-  .cd-title {
-    height: 200px;
-    line-height: 300px;
-  }
-  .cd-title h1 {
-    font-size: 3rem;
-  }
-}
-
-.cd-intro {
-  width: 90%;
-  max-width: 768px;
-  text-align: center;
-}
-
-.cd-intro {
-  margin: 4em auto;
-}
-@media only screen and (min-width: 768px) {
-  .cd-intro {
-    margin: 5em auto;
-  }
-}
-@media only screen and (min-width: 1170px) {
-  .cd-intro {
-    margin: 6em auto;
-  }
-}
-
-.cd-headline {
-  font-size: 3rem;
-  line-height: 1.2;
-}
-@media only screen and (min-width: 768px) {
-  .cd-headline {
-    font-size: 4.4rem;
-    font-weight: 300;
-  }
-}
-@media only screen and (min-width: 1170px) {
-  .cd-headline {
-    font-size: 6rem;
-  }
-}
 
 .cd-words-wrapper {
-  display: inline-block;
   position: relative;
   text-align: left;
 }
@@ -101,6 +14,7 @@ a {
   white-space: nowrap;
   left: 0;
   top: 0;
+  font-weight: bold;
 }
 .cd-words-wrapper b.is-visible {
   position: relative;
@@ -768,7 +682,6 @@ xclip
   vertical-align: top;
 }
 .cd-headline.clip .cd-words-wrapper::after {
-  /* line */
   content: '';
   position: absolute;
   top: 0;
@@ -1019,6 +932,7 @@ xscale
   -ms-transform: scale(0);
   -o-transform: scale(0);
   transform: scale(0);
+  font-style: normal;
 }
 .is-visible .cd-headline.scale i {
   opacity: 1;
