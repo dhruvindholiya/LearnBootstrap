@@ -36,7 +36,7 @@ var swiper = new Swiper(".client_slider", {
     },
 });
 
-
+// Counter =============
 const counterUp = window.counterUp.default
 
 const callback = entries => {
