@@ -1108,7 +1108,15 @@ footer > div > div:last-of-type {
         padding-bottom: 5rem;
     }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
+    .horoscope_sec .row:not(:last-child) > div:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+    .horoscope_sec .row:nth-child(2) > div:nth-child(2),
+    .horoscope_sec .row:nth-child(3) > div:not(:nth-child(2)) {
+        margin-left: auto;
+    }
     h3, h2, .horoscope_sec h2 {
         font-size: 3.5rem;
         line-height: 4rem;
@@ -1152,7 +1160,44 @@ footer > div > div:last-of-type {
     }
 }
 
+@media screen and (max-width: 575.98px) {
+    body {
+        font-size: 1.6rem;
+    }
+    h1 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+    .red_btn {
+        width: 14rem;
+        height: 4.5rem;
+        font-size: 1.4rem;
+    }
+    .why_sec img,
+    .horoscope_sec img {
+        width: 7rem;
+    }
+    h3, h2, .horoscope_sec h2 {
+        font-size: 3rem;
+    }
+    .client_sec .card img {
+        height: 25rem;
+    }
+    .discover_sec .img_box {
+        width: 6rem;
+    }
+    .appointment_sec form > div.row ,
+    .blog_sec > div > .row{
+        margin-left: calc(var(--bs-gutter-x) * -0.5);
+        margin-right: calc(var(--bs-gutter-x) * -0.5);
+    }
 
+    .appointment_sec form > div.row > div ,
+    .blog_sec > div > .row > div{
+        padding-left: calc(var(--bs-gutter-x) * 0.5);
+        padding-right: calc(var(--bs-gutter-x) * 0.5);
+    }
+}
 
 
 
